@@ -7,6 +7,7 @@ public class BalancingSymbolsTest {
         LinkedStack stack = new LinkedStack();
 
         String ex = JOptionPane.showInputDialog(null, "What is your expression?");
+        ex = ex.replaceAll("\\s", "");
         try{
             for (int i = 0; i < ex.length(); i++) {
                 char c = ex.charAt(i);
