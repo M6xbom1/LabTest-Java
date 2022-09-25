@@ -33,7 +33,7 @@ public class BalancingSymbolsTest {
                     if(stack.isEmpty()){
                         throw new Exception("Stack is empty :Not Balancing Symbol");
                     }
-                        check = (char)stack.pop();
+                        check = (char)stack.top();
                         if(check == '{'){
                             stack.pop();
                         }
@@ -46,7 +46,7 @@ public class BalancingSymbolsTest {
                     if(stack.isEmpty()){
                         throw new Exception("Stack is empty :Not Balancing Symbol");
                     }
-                        check = (char)stack.pop();
+                        check = (char)stack.top();
                         if(check == '['){
                             stack.pop();
                         }
